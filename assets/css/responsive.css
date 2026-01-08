@@ -144,6 +144,13 @@ main {
   }
 }
 
+@media screen and (min-width: 992px) {
+  main {
+    font-size: 1.5vw;
+    padding-inline: 2em;
+  }
+}
+
 /* PRODUCTS SECTION */
 
 h1 {
@@ -211,42 +218,6 @@ main button {
   height: 30%;
 }
 
-@media screen and (min-width: 768px) {
-  h1 {
-    margin-top: 0.6em;
-    font-size: 2.3em;
-  }
-
-  .cards-section {
-    flex-wrap: nowrap;
-    height: 28vw;
-  }
-
-  .card:last-of-type {
-    display: none;
-  }
-
-  .honey-type {
-    padding-inline: 1em;
-    /* line-height: 1em; */
-  }
-
-  .honey-type h4 {
-    line-height: 1.3em;
-  }
-
-  .price {
-    font-weight: 500;
-  }
-
-  main button {
-    padding-inline: 0em;
-    width: 50%;
-    height: 30%;
-    border-radius: 2em;
-  }
-}
-
 @media screen and (max-width: 575px) {
   h1 {
     font-size: 1.5em;
@@ -267,6 +238,59 @@ main button {
 
   .price {
     font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-top: 0.6em;
+    font-size: 2.3em;
+  }
+
+  .cards-section {
+    flex-wrap: nowrap;
+    height: 28vw;
+  }
+
+  .card:last-of-type {
+    display: none;
+  }
+
+  .honey-type {
+    padding-inline: 1em;
+  }
+
+  .honey-type h4 {
+    line-height: 1.3em;
+  }
+
+  .price {
+    font-weight: 500;
+  }
+
+  main button {
+    padding-inline: 0em;
+    width: 50%;
+    height: 30%;
+    border-radius: 2em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    margin-top: 0.6em;
+    font-size: 2.3em;
+  }
+  .cards-section {
+    height: 23vw;
+  }
+  .card:last-of-type {
+    display: flex;
+  }
+
+  main button {
+    width: 60%;
+    height: 30%;
   }
 }
 
@@ -301,16 +325,6 @@ h2 {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  h2 {
-    font-size: 2em;
-  }
-
-  .latest-news h3 {
-    font-size: 1.6em;
-  }
-}
-
 @media screen and (max-width: 575px) {
   h2 {
     font-size: 1em;
@@ -325,5 +339,15 @@ h2 {
 
   .latest-news h3 {
     font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  .latest-news h3 {
+    font-size: 1.6em;
   }
 }
