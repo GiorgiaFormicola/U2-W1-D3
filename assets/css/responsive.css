@@ -26,6 +26,20 @@ body a {
   color: #61240f;
 }
 
+@media screen and (max-width: 575px) {
+  body {
+    text-align: center;
+    font-size: 6vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    font-size: 2.5vw;
+  }
+}
+
 /* HEADER */
 header {
   width: 100%;
@@ -59,11 +73,6 @@ header button {
 }
 
 @media screen and (max-width: 575px) {
-  body {
-    text-align: center;
-    font-size: 6vw;
-  }
-
   header {
     margin-top: 1em;
     margin-inline: 0.5em;
@@ -87,6 +96,32 @@ header button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    width: 25vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    height: 100vh;
+    position: fixed;
+  }
+
+  header button:not(:nth-of-type(3)) {
+    padding-block: 3em;
+    width: 100%;
+    border-radius: 4em;
+    font-size: 0.5em;
+  }
+
+  .shop-button {
+    font-size: 1.7vw;
+    width: 100%;
+    order: -1;
+    justify-content: center;
+    gap: 1.5em;
+  }
+}
+
 /* MAIN */
 main {
   padding-inline: 1em;
@@ -97,6 +132,15 @@ main {
 @media screen and (max-width: 575px) {
   main {
     font-size: 6vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    margin-left: 25vw;
+    width: 75vw;
+    font-size: 2vw;
+    padding-inline: 2em;
   }
 }
 
@@ -167,6 +211,42 @@ main button {
   height: 30%;
 }
 
+@media screen and (min-width: 768px) {
+  h1 {
+    margin-top: 0.6em;
+    font-size: 2.3em;
+  }
+
+  .cards-section {
+    flex-wrap: nowrap;
+    height: 28vw;
+  }
+
+  .card:last-of-type {
+    display: none;
+  }
+
+  .honey-type {
+    padding-inline: 1em;
+    /* line-height: 1em; */
+  }
+
+  .honey-type h4 {
+    line-height: 1.3em;
+  }
+
+  .price {
+    font-weight: 500;
+  }
+
+  main button {
+    padding-inline: 0em;
+    width: 50%;
+    height: 30%;
+    border-radius: 2em;
+  }
+}
+
 @media screen and (max-width: 575px) {
   h1 {
     font-size: 1.5em;
@@ -219,6 +299,16 @@ h2 {
 
 .latest-news img {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  .latest-news h3 {
+    font-size: 1.6em;
+  }
 }
 
 @media screen and (max-width: 575px) {
